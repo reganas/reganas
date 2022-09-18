@@ -1,299 +1,105 @@
-Introduction
-In this graded assessment, you will revise your biographical page to use Bootstrap.
+# Lab Instructions: Create and style a webpage
 
-Goal
-Use Bootstrap to build your biographical page.
+In this exercise you will you will practice building your webpage using HTML and CSS.<br><br>
+
+> ### **Tips: Before you Begin**
+> #### **To view your code and instructions side-by-side**, select the following in your VSCode toolbar:
+> - View -> Editor Layout -> Two Columns
+> - To view this file in Preview mode, right click on this README.md file and `Open Preview`
+> - Select your code file in the code tree, which will open it up in a new VSCode tab.
+> - Drag your assessment code files over to the second column. 
+> - Great work! You can now see instructions and code at the same time. 
+ <br><br> 
+ 
+<br>
+
+## Task 1: Create the HTML file. 
 
 Objectives
-Add a Bootstrap Grid to the page.
+- Add  photo.jpg to the webpage.
+- Add your name as a heading to the webpage.
+- Add an unordered list of your five favorite music artists.
+- Add an ordered list of your top five favorite films.
+- Add a hyperlink to your Facebook profile, or, meta.com.
 
-Set up the grid so that the content will layout correctly on both mobile and desktop.
+Follow the Step by Step instructions below:
 
-Configure your photo to be responsive.
+1. Open the `index.html` file and set up the following basic HTML document structure:
+    ```HTML
+    <!DOCTYPE html>
+    <html>
+    <head>
+    </head>
+    <body>
+    </body>
+    </html>
+    ```
 
-Change the Meta profile link to use a Bootstrap button style.
+2. Set the title of the HTML document to your name:
+    ```HTML
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>your name</title>
+    </head>
+    <body>
+    </body>
+    </html>
+    ```
 
-Learner Instructions
-Step 1: Open index.html
+3. Link to `styles.css` in the `head` element.
 
-Step 2: Add a div element to the body element.
+4. Add five divider elements to the `body` element.
 
-1234
-<body>
-    <div>
-    </div>
-</body>
-Step 3: Apply the Bootstrap container CSS class to the div.
+5. Add a heading 1 to the first divider element that displays your name.
 
-1234
-<body>
-    <div class="container">
-    </div>
-</body>
-Step 4: Add a div element to the container element.
+6. Add `photo.jpg` using an image element in the second divider element..  
 
-1234
-    <div class="container">
-        <div>
-        </div>
-    </div>
-Step 5: Apply the Bootstrap row CSS class to the div.
+7. Add an ID attribute with the value `photo` on the image element.
 
-1234
-    <div class="container">
-        <div class="row">
-        </div>
-    </div>
-Step 6: Add two div elements to the row element.
+8. Add a heading 2 for `Favorite Music Artists` in the third divider element. In the same divider add an unordered list with your top 5 favorite artists.
 
-12345678
-    <div class="container">
-        <div class="row">
-            <div>
-            </div>
-            <div>
-            </div>
-        </div>
-    </div>
-Step 7: On the first div element apply the id attribute with the value bio.
+9. Add a heading 2 for `Favorite Films` in the fourth divider element. In the same divider add an ordered list with your top 5 favorite films.
 
-12345678
-    <div class="container">
-        <div class="row">
-            <div id="bio">
-            </div>
-            <div>
-            </div>
-        </div>
-    </div>
-Step 8: Apply the id attribute on the second div element with the value more.
+10. Add a hyperlink to your Facebook profile page in the last divider element. Alternatively, add a hyperlink to `https://www.meta.com/`. As a last step, add `My Profile` to the descriptive text of the `<a>` tag. 
 
-12345678
-    <div class="container">
-        <div class="row">
-            <div id="bio">
-            </div>
-            <div id="more">
-            </div>
-        </div>
-    </div>
-Step 9: Apply the correct CSS classes so that each div with be 12 columns wide on mobile and 6 columns wide on desktop.
 
-12345678
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6">
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-            </div>
-        </div>
-    </div>
-Step 10: Apply the text-center CSS class on the bio div element.
+<br>
 
-12345678
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-            </div>
-        </div>
-    </div>
-Step 11:  Add an h1 heading containing your name as the text inside the bio div element.
+## Task 2: Style the webpage using CSS.
 
-123456789
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-                <h1>Jane</h1>
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-            </div>
-        </div>
-    </div>
-Step 12: Add an img element for photo.jpg below the h1 element.
+Objectives
+- Style the webpage using CSS.
 
-12345678910
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-                <h1>Jane</h1>
-                <img src="photo.jpg">
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-            </div>
-        </div>
-    </div>
-Step 13: Apply the img-fluid CSS class to the img element.
+Follow the Step by Step instructions below:
 
-12345678910
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-                <h1>Jane</h1>
-                <img src="photo.jpg" class="img-fluid">
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-            </div>
-        </div>
-    </div>
-Step 14: Add an h2 heading containing the text Favorite Music Artists inside the more div element.
+1. Open the `styles.css ` file.
 
-1234567891011
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-                <h1>Jane</h1>
-                <img src="photo.jpg" class="img-fluid">
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-                <h2>Favorite Music Artists</h2>
-            </div>
-        </div>
+2. Add a CSS rule for your image that sets the `border` property to `2` pixels wide with a `solid blue` color.
 
-Step 15: Add an unordered list of your favorite music artists below the h2 heading.
+3. Add a CSS rule for heading 1 containing your name and set its color to `blue`.
 
-123456789101112131415161718
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-                <h1>Jane</h1>
-                <img src="photo.jpg" class="img-fluid">
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-                <h2>Favorite Music Artists</h2>
-                <ul>
-                    <li>Metallica</li>
+4. Add a CSS rule for all `<h2>` headings and set their color to `grey`.
 
-Step 16: Add another h2 heading containing the text Favorite Films below the favorite music artists list.
+5. Add a CSS rule that applies a `margin` of `4` pixels to the divider elements.
 
-12345678910111213141516171819
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-                <h1>Jane</h1>
-                <img src="photo.jpg" class="img-fluid">
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-                <h2>Favorite Music Artists</h2>
-                <ul>
-                    <li>Metallica</li>
 
-Step 17: Add an ordered list of your top 5 films after the Favorite Films heading.
+<br>
 
-1234567891011121314151617181920212223242526
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-                <h1>Jane</h1>
-                <img src="photo.jpg" class="img-fluid">
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-                <h2>Favorite Music Artists</h2>
-                <ul>
-                    <li>Metallica</li>
 
-Step 18: Add an anchor tag after the ordered list.
 
-123456789101112131415161718192021222324252627
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-                <h1>Jane</h1>
-                <img src="photo.jpg" class="img-fluid">
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-                <h2>Favorite Music Artists</h2>
-                <ul>
-                    <li>Metallica</li>
+## Final Step: Let's submit your code!
+Nice work! To complete this assessment:
+- Save your file through File -> Save 
+- Select "Submit Assignment" in your Lab toolbar. 
 
-Step 19: Link to your Meta profile in the anchor tag.
+Your code will be autograded and return feedback shortly on the "Grades" tab.  
+You can also see your score in your Programming Assignment "My Submission" tab.
+<br> <br> 
 
-123456789101112131415161718192021222324252627
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-                <h1>Jane</h1>
-                <img src="photo.jpg" class="img-fluid">
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-                <h2>Favorite Music Artists</h2>
-                <ul>
-                    <li>Metallica</li>
+### Tips
 
-Step 20: Set the anchor text to display My Meta Profile.
-
-123456789101112131415161718192021222324252627
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-                <h1>Jane</h1>
-                <img src="photo.jpg" class="img-fluid">
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-                <h2>Favorite Music Artists</h2>
-                <ul>
-                    <li>Metallica</li>
-
-Step 21: Apply the button Bootstrap component CSS class to the anchor tag.
-
-123456789101112131415161718192021222324252627
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-                <h1>Jane</h1>
-                <img src="photo.jpg" class="img-fluid">
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-                <h2>Favorite Music Artists</h2>
-                <ul>
-                    <li>Metallica</li>
-
-Step 22: Apply the primary modifier to the button component.
-
-123456789101112131415161718192021222324252627
-    <div class="container">
-        <div class="row">
-            <div id="bio" class="col-12 col-lg-6 text-center">
-                <h1>Jane</h1>
-                <img src="photo.jpg" class="img-fluid">
-            </div>
-            <div id="more" class="col-12 col-lg-6">
-                <h2>Favorite Music Artists</h2>
-                <ul>
-                    <li>Metallica</li>
-
-Step 23: Save the file.
-
-Step 24: Click on 'Go live', which is at the bottom right of your editor.
-
-Click on Go Live
-Once the server is up and running you'll see the exposed port.
-
-Exposed port
-Step 25: Now click on browser preview. 
-
-Click on browser preview
-Enter the url as http://localhost:<exposed port>  
-
-Enter the URL
-Step 26: Make sure to close the server by clicking on exposed Port number (e.g. 5500) after completing the lab.
-
-Exposed port
-You should see a notification like this which confirms the server has been stopped.
-
-Notification that the server is now offline
-Step 27: Make sure to close the server by clicking on exposed Port number (e.g. 5500) after completing the lab.
-
-Exposed port
-You should see a notification like this which confirms the server has been stopped.
-
-Notification that the server is now offline
-Tips
-Remember the responsive breakpoints in Bootstrap. Use the correct infixes where appropriate.
-
-Component modifiers are specified using suffixes.
-
-Use the Browser Preview to check your progress.
-
-Review the lessons Using Bootstrap Styles, Bootstrap Grid and Bootstrap Components.
+* Make sure that HTML tags are closed properly.
+* Use a different heading type for your name.
+* Remember the box model.
+* Review the lessons *Creating a HTML document*, *Adding Images*, *Selecting and Styling*, and *Different types of selectors*.
